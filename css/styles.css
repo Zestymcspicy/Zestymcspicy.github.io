@@ -1,0 +1,134 @@
+body {
+  max-height: 900px;
+}
+
+section {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.for_colors {
+  width: 25%;
+  order: -1;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.color_box:first-of-type {
+  margin-top: 260px;
+}
+
+.color_box {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.square {
+  height: 30%;
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  max-width: 60px;
+}
+
+.top {
+  background-color: #800000;
+}
+
+.middle {
+  background-color: #f3a4f7;
+}
+
+.last {
+  background-color: #0098f8;
+}
+
+.logo {
+  max-height: 100%;
+  width: 148px;
+  padding-top: 5px;
+  padding-bottom: 2%;
+  min-width: 95px;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  border-bottom: 3px solid #f3a4f7;
+}
+
+.my_name {
+  width: 80%;
+  text-align: right;
+  font-family: "Acme", sans-serif;
+}
+
+.description {
+  width: 80%;
+  text-align: right;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.head {
+  align-content: flex-end;
+}
+
+.main_content {
+  width: 75%;
+  max-width: 80%;
+  height: 60%;
+}
+
+.main_image {
+  width: 90%;
+  margin: 7%;
+  max-width: 670px;
+  position: relative;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.footer {
+  height: 20%;
+  width: 100%;
+  order: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_box {
+  width: 33.33333%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_box span, a {
+  font-family: "Skranji",cursive;
+  width: 75%;
+  text-align: center;
+}
+
+.footer_img {
+  width: 75%;
+  height: 75%;
+}
+
+.center .footer_img {
+  width: 60%;
+  margin-left: 10%;
+}
+
+a {
+  padding: 15px;
+}
+
+p {
+  order: 4;
+  text-align: center;
+  font-family: "Do+Hyeon", sans-serif;
+}

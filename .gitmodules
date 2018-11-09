@@ -1,3 +1,6 @@
 [submodule "PixelArtMaker"]
 	path = PixelArtMaker
 	url = https://github.com/Zestymcspicy/PixelArtMaker.git
+[submodule "fendfinal"]
+	path = fendfinal
+	url = https://github.com/Zestymcspicy/fendfinal

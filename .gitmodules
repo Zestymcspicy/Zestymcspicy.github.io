@@ -4,3 +4,6 @@
 [submodule "fendfinal"]
 	path = fendfinal
 	url = https://github.com/Zestymcspicy/fendfinal
+[submodule "frogger"]
+	path = frogger
+	url = https://github.com/zestymcspicy/frogger

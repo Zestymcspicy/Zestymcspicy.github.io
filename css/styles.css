@@ -78,6 +78,10 @@ header {
   align-content: flex-end;
 }
 
+img {
+  box-shadow: 5px 5px 2px #B5AFAF; 
+}
+
 .main_content {
   width: 75%;
   max-width: 80%;
@@ -91,6 +95,7 @@ header {
   position: relative;
   min-height: 200px;
   min-width: 200px;
+  border-radius: 20px;
 }
 
 .footer {
@@ -114,21 +119,21 @@ header {
 }
 
 .footer_img {
-  width: 75%;
-  height: 75%;
-}
-
-.center .footer_img {
-  width: 60%;
-  margin-left: 10%;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 a {
-  padding: 15px;
+  margin: 20%;
 }
 
 p {
   order: 4;
   text-align: center;
   font-family: "Do+Hyeon", sans-serif;
+}
+
+.left {
+  padding-top: 1%;
 }

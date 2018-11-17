@@ -7,3 +7,6 @@
 [submodule "frogger"]
 	path = frogger
 	url = https://github.com/zestymcspicy/frogger
+[submodule "memory-game"]
+	path = memory-game
+	url = https://github.com/zestymcspicy/fend-project-memory-game

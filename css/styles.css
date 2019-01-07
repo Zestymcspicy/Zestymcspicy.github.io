@@ -124,12 +124,18 @@ img {
 .project_box {
   width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   max-height: 200px;
 }
 
-.project_box span, a {
+.project_box span {
+  bottom: 40%;
+  position: relative;
+  padding-left: 5%;
+}
+
+span, a {
   font-family: "Skranji",cursive;
   color: #f2ac07;
   text-align: left;

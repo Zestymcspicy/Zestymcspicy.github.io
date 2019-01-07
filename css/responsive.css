@@ -8,6 +8,10 @@
     margin: none;
   }
 
+  .project_box{
+    flex-direction: column;
+  }
+
   .header {
     width: 100%;
   }
@@ -15,10 +19,11 @@
   .logo {
     min-width: 60px;
     height: 50%;
-    }
+  }
 
-    .footer_box {
+  .project_box {
       margin-bottom: 15%;
+      width: 100%;
     }
 
     .footer_img {
@@ -28,23 +33,23 @@
     .main_image {
       width: 100%;
     }
+    .span{
+      padding: 5%;
+    }
 }
 
 @media screen and (max-width: 430px) {
-  .footer {
-    height: auto;
-    padding-left: 20%;
+
+
   }
 
-  .footer_box {
-    width: 100%;
-    padding-bottom: 3%;
+@media screen and (min-width: 600px) {
+  .project_box span {
+    bottom: 40%;
+    position: relative;
   }
-}
-
-@media screen and (min-width: 550px) {
-  .square {
-    height: 60%;
+  .project_box {
+    flex-direction: row;
   }
 }
 

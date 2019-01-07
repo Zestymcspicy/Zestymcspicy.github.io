@@ -1,11 +1,16 @@
 body {
-  max-height: 900px;
+  display: flex;
+
+  height: auto;
+  background-color: #1F1F1F;
+  color: #f2ac07;
 }
 
 section {
   box-sizing: border-box;
 }
 .container {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -20,6 +25,7 @@ section {
 .color_box:first-of-type {
   margin-top: 260px;
 }
+
 
 .color_box {
   height: 100px;
@@ -38,7 +44,6 @@ section {
 .top {
   background-color: #800000;
 }
-
 .middle {
   background-color: #f3a4f7;
 }
@@ -60,13 +65,21 @@ header {
   width: 100%;
   height: 20%;
   display: flex;
-  border-bottom: 3px solid #f3a4f7;
+  border-bottom: 3px solid #f2ac07;
+}
+
+h1 {
+font-family: "Acme", sans-serif;
+}
+
+.section-header {
+  text-align: center;
+  width: 100%;
 }
 
 .my_name {
   width: 80%;
   text-align: right;
-  font-family: "Acme", sans-serif;
 }
 
 .description {
@@ -85,6 +98,7 @@ img {
 
 .main_content {
   width: 75%;
+  margin:auto;
   max-width: 80%;
   height: 60%;
 }
@@ -99,7 +113,7 @@ img {
   border-radius: 20px;
 }
 
-.footer {
+.projects {
   height: 20%;
   width: 100%;
   order: 1;
@@ -107,27 +121,39 @@ img {
   flex-wrap: wrap;
 }
 
-.footer_box {
-  width: 33.33333%;
+.project_box {
+  width: 50%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  max-height: 200px;
 }
 
-.footer_box span, a {
+.project_box span, a {
   font-family: "Skranji",cursive;
-  width: 75%;
-  text-align: center;
+  color: #f2ac07;
+  text-align: left;
+  text-decoration: none;
 }
+
+
 
 .footer_img {
-  width: 100%;
+  width: 35%;
   height: auto;
   border-radius: 5px;
 }
 
-a {
-  margin: 20%;
+.project_text{
+  /* display: block; */
+  width: 65%;
+  /* padding: 20% 5% 20% 0;
+  max-height: 200px; */
 }
+
+/* a {
+  margin: 20%;
+} */
 
 p {
   order: 4;

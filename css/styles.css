@@ -1,6 +1,5 @@
 body {
   display: flex;
-
   height: auto;
   background-color: #1F1F1F;
   color: #f2ac07;
@@ -130,28 +129,32 @@ img {
 }
 
 .project_box span {
-  bottom: 40%;
-  position: relative;
-  padding-left: 5%;
+  /* bottom: 40%;
+  position: relative; */
 }
 
-span, a {
+span {
   font-family: "Skranji",cursive;
   color: #f2ac07;
   text-align: left;
+}
+
+a {
   text-decoration: none;
+  display: flex;
 }
 
 
 
-.footer_img {
+.project_img {
   width: 35%;
-  height: auto;
+  height: 90%;
   border-radius: 5px;
 }
 
-.project_text{
-  /* display: block; */
+.project_text_container{
+  display: block;
+  padding-left: 5%;
   width: 65%;
   /* padding: 20% 5% 20% 0;
   max-height: 200px; */

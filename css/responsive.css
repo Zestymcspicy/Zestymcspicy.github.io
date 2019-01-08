@@ -26,7 +26,7 @@
     max-height: 300px;
   }
 
-  .footer_img {
+  .project_img {
     height: 55%;
     width: 90%;
   }
@@ -34,7 +34,9 @@
     width: 100%;
   }
 
-
+  .project_box {
+    max-height: 400px;
+  }
 
   span, a {
     text-align: center;
@@ -42,17 +44,28 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
 
-  .footer_img{}
-  /* }
+  .projects{
+    flex-direction: column;
+  }
 
-@media screen and (min-width: 600px) { */
-  /* .project_box span {
-    bottom: 40%;
-    position: relative;
-  } */
   .project_box {
+    flex-direction: column;
+    flex-wrap:nowrap;
+    width: 100%;
+  }
+
+  .project_img{
+    width: 60%;
+    margin: auto;
+  }
+
+  .project_text_container{
+    padding: 4% 29%;
+  }
+
+  a {
     flex-direction: column;
   }
 }

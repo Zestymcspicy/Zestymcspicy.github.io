@@ -1,9 +1,12 @@
 [submodule "PixelArtMaker"]
 	path = PixelArtMaker
-	url = https://github.com/Zestymcspicy/PixelArtMaker.git
+	url = https://github.com/Zestymcspicy/PixelArtMaker
 [submodule "frogger"]
 	path = frogger
 	url = https://github.com/zestymcspicy/frogger
 [submodule "memory-game"]
 	path = memory-game
 	url = https://github.com/zestymcspicy/fend-project-memory-game
+[submodule "LFKoffee"]
+	path = LFKoffee
+	url = https://github.com/zestymcspicy/LFKoffee

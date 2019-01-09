@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <link href="https://fonts.googleapis.com/css?family=Acme|Do+Hyeon|Skranji" rel="stylesheet">
@@ -10,20 +10,6 @@
 </head>
 <body>
   <div class= "container">
-    <div class="for_colors">
-      <div class="color_box">
-        <section class="top square"></section>
-        <span>#800000</span>
-      </div>
-      <div class="color_box">
-        <section class="middle square"></section>
-        <span>#f3a4f7</span>
-      </div>
-      <div class="color_box">
-        <section class="last square"></section>
-        <span>#0098f8</span>
-      </div>
-    </div>
     <div class="main_content">
     <header>
       <img id="logo" src="images\logo.png" alt="HDB Logo">
@@ -35,31 +21,50 @@
         <img class="main_image" src="images\some_code.jpeg" alt="Coding!"><!---
           image source: https://cdn-images-1.medium.com/max/1200/1*bcZz-qb_DNpvrNNwQBhQmQ.jpeg !--->
       </div>
-    <div class="footer">
-      <section class="footer_box left">
-        <a href="PixelArtMaker/index.html">
-          <img class="footer_img" src="images/pixel-art.png" alt="My Pixel Art Maker">
-          <span>Udacity Pixel Art Maker</span>
-        </a>
-      </section>
-      <section class="footer_box center">
-        <a href="frogger/index.html">
-          <img class="footer_img" src="images/frogger-image.PNG" alt="Game Screen">
-          <span>Frogger Style Game</span>
-        </a>
-      </section>
-      <section class="footer_box right">
-        <a href="memory-game/index.html">
-          <img class="footer_img" src="images/memory-image.PNG" alt="Game Screen">
-          <span>Memory Card Game</span>
-        </a>
-      </section>
-    </div>
+      <div>
+    <h1 class="section-header">About</h1>
     <p>I'm a cook with a philosophy degree, trying something new. I've
       been managing a kitchen for years, have always had an interest in
-      computers and recently focused that interest toward online applcations.
-      I got into the "Grow with Google" challenge, completed Udacity's
-       Front-End Development Nanodegree, and am now pursuing a role in front-end development.</p>
+      computers. I got into the "Grow with Google" challenge, and ended up
+      receiving a Front-End Web Development Nanodegree from Udacity.  I
+      believe the future is in web based applications and would like to ba
+      a part of building that future.</p>
+    </div>
+    <h1 class="section-header">Projects</h1>
+      <div class="projects">
+        <section class="project_box first">
+          <a href="PixelArtMaker/index.html">
+            <img class="project_img" src="images/pixel-art.png" alt="My Pixel Art Maker">
+            <div class="project_text_container">
+              <span>Udacity Pixel Art Maker</span>
+            </div>
+          </a>
+        </section>
+        <section class="project_box second">
+          <a href="frogger/index.html">
+            <img class="project_img" src="images/frogger-image.PNG" alt="Game Screen">
+            <div class="project_text_container">
+              <span>Frogger Style Game</span>
+            </div>
+            </a>
+          </section>
+          <section class="project_box third">
+            <a href="memory-game/index.html">
+              <img class="project_img" src="images/memory-image.PNG" alt="Game Screen">
+              <div class="project_text_container">
+                <span>Memory Card Game</span>
+              </div>
+            </a>
+          </section>
+          <section class="project_box fourth">
+            <a href="LFKoffee/index.html">
+              <img class="project_img" src="images/lfkoffee-image.PNG" alt="LFKoffee">
+              <div class="project_text_container">
+                <span>LFKoffee</span>
+              </div>
+            </a>
+          </section>
+        </div>
   </div>
 </body>
 </html>

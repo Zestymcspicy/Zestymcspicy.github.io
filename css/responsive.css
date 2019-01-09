@@ -1,14 +1,9 @@
 @media screen and (max-width: 350px) {
-  .for_colors {
-    display: none;
-  }
 
   .main_content {
     width: 100%;
     margin: none;
   }
-
-
 
   .header {
     width: 100%;
@@ -30,6 +25,7 @@
     height: 55%;
     width: 90%;
   }
+
   .main_image {
     width: 100%;
   }
@@ -38,10 +34,10 @@
     max-height: 400px;
   }
 
-  span, a {
+  /* span, a {
     text-align: center;
     width: 100%;
-  }
+  } */
 }
 
 @media screen and (max-width: 550px) {

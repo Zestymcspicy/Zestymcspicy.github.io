@@ -5,66 +5,103 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  <link href="https://fonts.googleapis.com/css?family=Acme|Do+Hyeon|Skranji" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>Harold Beckerman's Portfolio</title>
 </head>
 <body>
-  <div class= "container">
-    <div class="main_content">
-    <header>
-      <img id="logo" src="images\logo.png" alt="HDB Logo">
-      <div class="head container">
-        <h1 class="my_name">Harold Beckerman</h1>
-        <h3 class="description">Front-end Development Padawan</h3>
-      </div>
-    </header>
-        <img class="main_image" src="images\some_code.jpeg" alt="Coding!"><!---
-          image source: https://cdn-images-1.medium.com/max/1200/1*bcZz-qb_DNpvrNNwQBhQmQ.jpeg !--->
-      </div>
-      <div>
-    <h1 class="section-header">About</h1>
-    <p>I'm a cook with a philosophy degree, trying something new. I've
-      been managing a kitchen for years, have always had an interest in
-      computers. I got into the "Grow with Google" challenge, and ended up
-      receiving a Front-End Web Development Nanodegree from Udacity.  I
-      believe the future is in web based applications and would like to ba
-      a part of building that future.</p>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main-navigation">
+        <div class="navbar-menu">
+          <!-- <div class="navbar-brand">
+          </div> -->
+          <div class="navbar-start is-expanded"></div>
+            <a class="navbar-item">About</a>
+            <a class="navbar-item">Projects</a>
+            <a class="navbar-item">Contact</a>
+        </div>
+    </nav>
+    <div class="level">
+      <header class="columns level-item">
+        <div class="column is-hidden-mobile is-one-fifth">
+          <img id="logo" src="images\logo.png" alt="HDB Logo">
+        </div>
+        <div id="top-info" class="column">
+          <h1 class="title is-2">Harold Beckerman</h1>
+          <h3 style="margin-top: -0.25rem" class="subtitle is-4">Front-End Developer</h3>
+          <span id="fade-in-text" class="subtite is-6 fade-in">But call me Hal....</span>
+        </div>
+      </header>
     </div>
-    <h1 class="section-header">Projects</h1>
-      <div class="projects">
-        <section class="project_box first">
-          <a href="PixelArtMaker/index.html">
+    <div class="section">
+        <img class="main-image" src="images\some_code.jpeg" alt="Coding!"><!---
+          image source: https://cdn-images-1.medium.com/max/1200/1*bcZz-qb_DNpvrNNwQBhQmQ.jpeg !--->
+    </div>
+      <div class="section">
+        <div class="container">
+          <h1 class="title is-3">About</h1>
+          <p class="has-text-white-ter" id="about">I'm a sous chef with a philosophy degree, trying something new. I've
+              been running a kitchen for years, have always had an interest in
+              computers. I got into the "Grow with Google" challenge, and completed
+              the Front-End Web Development Nanodegree program from Udacity.  I
+              believe web based applications have the potential to produce greater
+              levels of collaboration than previously seen and would like to part of
+              that development.</p>
+        </div>
+      </div>
+  <div class="section">
+    <h1 class="title is-3">Projects</h1>
+      <div class="tile is-ancestor">
+        <section class="tile is-parent is-3">
+          <a class="tile is-child is-11 does-transform" href="PixelArtMaker/index.html">
             <img class="project_img" src="images/pixel-art.png" alt="My Pixel Art Maker">
-            <div class="project_text_container">
-              <span>Udacity Pixel Art Maker</span>
-            </div>
+              <span class="content has-text-white-ter">Udacity Pixel Art Maker</span>
           </a>
         </section>
-        <section class="project_box second">
-          <a href="frogger/index.html">
+        <section class="tile is-parent is-3">
+          <a class="tile is-child is-11 does-transform" href="frogger/index.html">
             <img class="project_img" src="images/frogger-image.PNG" alt="Game Screen">
-            <div class="project_text_container">
-              <span>Frogger Style Game</span>
-            </div>
+              <span class="content has-text-white-ter">Frogger Style Game</span>
             </a>
           </section>
-          <section class="project_box third">
-            <a href="memory-game/index.html">
+          <section class="tile is-parent is-3">
+            <a class="tile is-child is-11 does-transform" href="memory-game/index.html">
               <img class="project_img" src="images/memory-image.PNG" alt="Game Screen">
-              <div class="project_text_container">
-                <span>Memory Card Game</span>
-              </div>
+                <span class="content has-text-white-ter">Memory Card Game</span>
             </a>
           </section>
-          <section class="project_box fourth">
-            <a href="LFKoffee/index.html">
+          <section class="tile is-parent is-3">
+            <a class="tile is-child is-11 does-transform" href="LFKoffee/index.html">
               <img class="project_img" src="images/lfkoffee-image.PNG" alt="LFKoffee">
-              <div class="project_text_container">
-                <span>LFKoffee</span>
-              </div>
+                <span class="content has-text-white-ter">LFKoffee</span>
             </a>
           </section>
         </div>
-  </div>
-</body>
-</html>
+      </div>
+      <div class="section">
+        <span class="title is-3">Contact</span>
+          <footer class="footer">
+            <div class="level">
+              <div class="level-left tags">
+                <a class="tag is-medium does-transform" href="mailto:halbeckerman@gmail.com">
+                  <span class="icon is-large" >
+                    <i class="fas fa-envelope-square"></i>
+                    </span>halbeckerman@gmail.com
+                  </a>
+                  <a class="tag is-medium does-transform" href="https://github.com/zestymcspicy">
+                    <span class="icon is-large">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    GitHub
+                  </a>
+                  <a class="tag is-medium does-transform" href="https://github.com/zestymcspicy">
+                    <span class="icon is-large">
+                      <i class="fab fa-linkedin-in"></i>
+                    </span>
+                    LinkedIn
+                  </a>
+            </div>
+            </div>
+          </div>
+        </footer>
+        <script src="js/main.js"></script>
+      </body>
+    </html>

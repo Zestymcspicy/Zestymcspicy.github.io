@@ -1,2 +1,2 @@
-#UdacityPortfolioMockup
-This is my Udacity portfolio mockup for the "Grow with Google" front-end development course.
+#UdacityPortfolio
+This is my portfolio from the "Grow with Google" Udacity front-end development course.  I've continued to update it since graduation from the course.

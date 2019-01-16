@@ -1,0 +1,76 @@
+#logo{
+  margin-top: 22%;
+  max-width: 128px;
+  max-height: 128px
+}
+
+img{
+  border-radius: 2%;
+}
+$my-white: #f5fbf8;
+$my-gray: #3e5e65;
+
+$tag-color: $my-gray;
+$tag-background-color: $my-white;
+$footer-background-color: $my-gray;
+$box-background-color: $my-gray;
+$box-color: $my-white;
+$body-background-color: $my-gray;
+$navbar-background-color: $my-gray;
+$navbar-item-color: $my-white;
+$title-color: $my-white;
+$subtitle-color: white;
+@import "../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700');
+
+i{
+  font-size: 1.5rem;
+}
+
+.fade-in{
+  animation-name: text-fade-in;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+.does-transform:hover{
+  cursor: pointer;
+  animation-name: float;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.does-transform-text:hover{
+  cursor: pointer;
+  animation-name: float;
+  animation-duration: .45s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+@keyframes float {
+
+  100%{
+    transform: scale(1.05);
+  }
+}
+
+@keyframes text-fade-in {
+  0%{
+    color:$my-gray;
+  }
+  100%{
+    color:$my-white;
+  }
+}
+
+@media screen and(max-width: 765px) {
+  #top-info{
+    margin-left: 1rem;
+  }
+}

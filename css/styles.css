@@ -6755,6 +6755,9 @@ label.panel-block {
 .invisible-text {
   color: #3e5e65; }
 
+#bulma {
+  height: 40px; }
+
 #dropped-sub {
   margin-top: -0.25rem; }
 

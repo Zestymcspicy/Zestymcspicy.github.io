@@ -1,13 +1,15 @@
-const textToGrow = document.getElementById("fade-in-text");
-let textToAdd = "this is my string to add";
+const textToGrow = document.getElementById("text-to-grow");
+document.getElementById("fade-in-text").classList.add("fade-in");
+let textToAdd = "...or maybe just really want.";
 let textToAddArray = textToAdd.split(" ");
 addToText = () => {
   for(var i=0; i<textToAddArray.length; i++) {
     let wordToAdd = document.createElement("span");
-    wordToAdd.innerHTML=`${textToAddArray[i]}`;
+    wordToAdd.classList.add("fade-in");
+    wordToAdd.innerHTML=`${textToAddArray[i]} `;
     setTimeout(function () {
-      textToGrow.append(wordToAdd);
-    }, i*1000);
+      textToGrow.appendChild(wordToAdd);
+    }, 700+i*700);
   }
 }
 

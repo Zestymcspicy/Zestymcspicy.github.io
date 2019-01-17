@@ -14,9 +14,9 @@
           <!-- <div class="navbar-brand">
           </div> -->
           <div class="navbar-start is-expanded"></div>
-            <a class="navbar-item">About</a>
-            <a class="navbar-item">Projects</a>
-            <a class="navbar-item">Contact</a>
+            <a href="#about" class="navbar-item">About</a>
+            <a href="#projects" class="navbar-item">Projects</a>
+            <a href="#contact" class="navbar-item">Contact</a>
         </div>
     </nav>
     <div class="level">
@@ -27,7 +27,10 @@
         <div id="top-info" class="column">
           <h1 class="title is-2">Harold Beckerman</h1>
           <h3 style="margin-top: -0.25rem" class="subtitle is-4">Front-End Developer</h3>
-          <span id="fade-in-text" class="subtite is-6 fade-in">But call me Hal....</span>
+            <span id="fade-in-text" class="subtite is-6">I want to help build things that people need.</span>
+            <section id="text-to-grow">
+              <span></span>
+            </section>
         </div>
       </header>
     </div>
@@ -35,48 +38,54 @@
         <img class="main-image" src="images\some_code.jpeg" alt="Coding!"><!---
           image source: https://cdn-images-1.medium.com/max/1200/1*bcZz-qb_DNpvrNNwQBhQmQ.jpeg !--->
     </div>
-      <div class="section">
+      <div id="about" class="section">
         <div class="container">
           <h1 class="title is-3">About</h1>
-          <p class="has-text-white-ter" id="about">I'm a sous chef with a philosophy degree, trying something new. I've
-              been running a kitchen for years, have always had an interest in
+          <p id="about">I'm a sous chef with a philosophy degree, trying something new. I've
+              been running a kitchen for years, and have always had an interest in
               computers. I got into the "Grow with Google" challenge, and completed
               the Front-End Web Development Nanodegree program from Udacity.  I
-              believe web based applications have the potential to produce greater
-              levels of collaboration than previously seen and would like to part of
-              that development.</p>
+              want to build things that fulfill previously unknown needs.  The
+              kinds of things that make people say, "I had no idea I needed this
+              in my life until I found out it existed."</p>
         </div>
       </div>
-  <div class="section">
+  <div id="projects" class="section">
     <h1 class="title is-3">Projects</h1>
       <div class="tile is-ancestor">
-        <section class="tile is-parent is-3">
+        <!-- <section class="tile is-parent is-3">
           <a class="tile is-child is-11 does-transform" href="PixelArtMaker/index.html">
             <img class="project_img" src="images/pixel-art.png" alt="My Pixel Art Maker">
               <span class="content has-text-white-ter">Udacity Pixel Art Maker</span>
           </a>
-        </section>
+        </section> -->
         <section class="tile is-parent is-3">
           <a class="tile is-child is-11 does-transform" href="frogger/index.html">
             <img class="project_img" src="images/frogger-image.PNG" alt="Game Screen">
-              <span class="content has-text-white-ter">Frogger Style Game</span>
+            <div class="level">
+                <span class="level-left">Frogger Style Game</span>
+            </div>
+          </a>
+          </section>
+          <section class="tile is-parent is-5">
+            <a class="tile is-child is-11 does-transform" href="LFKoffee/index.html">
+              <img class="project_img" src="images/lfkoffee-image.PNG" alt="LFKoffee">
+              <div class="level">
+                <span class="level-left">LFKoffee</span>
+              </div>
             </a>
           </section>
           <section class="tile is-parent is-3">
             <a class="tile is-child is-11 does-transform" href="memory-game/index.html">
               <img class="project_img" src="images/memory-image.PNG" alt="Game Screen">
-                <span class="content has-text-white-ter">Memory Card Game</span>
-            </a>
-          </section>
-          <section class="tile is-parent is-3">
-            <a class="tile is-child is-11 does-transform" href="LFKoffee/index.html">
-              <img class="project_img" src="images/lfkoffee-image.PNG" alt="LFKoffee">
-                <span class="content has-text-white-ter">LFKoffee</span>
+              <div class="level">
+                <span class="level-left">Memory Card Game</span>
+              </div>
             </a>
           </section>
         </div>
       </div>
-      <div class="section">
+      <div id="contact" class="section">
         <span class="title is-3">Contact</span>
           <footer class="footer">
             <div class="level">
@@ -84,19 +93,20 @@
                 <a class="tag is-medium does-transform" href="mailto:halbeckerman@gmail.com">
                   <span class="icon is-large" >
                     <i class="fas fa-envelope-square"></i>
-                    </span>halbeckerman@gmail.com
+                    </span>
+                    <span class="is-hidden-mobile">halbeckerman@gmail.com</span>
                   </a>
                   <a class="tag is-medium does-transform" href="https://github.com/zestymcspicy">
                     <span class="icon is-large">
                       <i class="fab fa-github"></i>
                     </span>
-                    GitHub
+                    <span class="is-hidden-mobile">GitHub</span>
                   </a>
                   <a class="tag is-medium does-transform" href="https://github.com/zestymcspicy">
                     <span class="icon is-large">
                       <i class="fab fa-linkedin-in"></i>
                     </span>
-                    LinkedIn
+                    <span class="is-hidden-mobile">LinkedIn</span>
                   </a>
             </div>
             </div>

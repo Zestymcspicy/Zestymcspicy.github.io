@@ -7,7 +7,7 @@ $my-gray: #3e5e65;
 $text: $my-white;
 $link: $my-white;
 $background: $my-gray;
-$family-sans-serif: "Karla", "Proza Libre", serif;
+$family-sans-serif: "Proza Libre", "Karla", serif;
 $tag-color: $my-gray;
 $tag-background-color: $my-white;
 $footer-background-color: $my-gray;
@@ -16,12 +16,17 @@ $navbar-background-color: $my-gray;
 $navbar-item-color: $my-white;
 $title-color: $my-white;
 $subtitle-color: $my-white;
+$navbar-item-hover-color: $my-gray;
 @import "../node_modules/bulma/bulma.sass";
 
 #logo{
   margin-top: 22%;
   max-width: 128px;
   max-height: 128px
+}
+
+#dropped-sub{
+  margin-top: -0.25rem;
 }
 
 img{

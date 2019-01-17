@@ -4,21 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>Harold Beckerman's Portfolio</title>
 </head>
 <body>
-    <nav class="navbar is-transparent" role="navigation" aria-label="main-navigation">
-        <div class="navbar-menu">
-          <!-- <div class="navbar-brand">
-          </div> -->
-          <div class="navbar-start is-expanded"></div>
-            <a href="#about" class="navbar-item">About</a>
-            <a href="#projects" class="navbar-item">Projects</a>
-            <a href="#contact" class="navbar-item">Contact</a>
+  <nav class="navbar" role="navigation" aria-label="main-navigation">
+    <div class="navbar-start is-expanded"></div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div class="navbar-end">
+        <div id="target" class="navbar-menu">
+          <a href="#about" class="does-transform navbar-item">About</a>
+          <a href="#projects" class="does-transform navbar-item">Projects</a>
+          <a href="#contact" class="does-transform navbar-item">Contact</a>
         </div>
+      </div>
     </nav>
+
     <div class="level">
       <header class="columns level-item">
         <div class="column is-hidden-mobile is-one-fifth">
@@ -26,7 +31,7 @@
         </div>
         <div id="top-info" class="column">
           <h1 class="title is-2">Harold Beckerman</h1>
-          <h3 style="margin-top: -0.25rem" class="subtitle is-4">Front-End Developer</h3>
+          <h3 id="dropped-sub" class="subtitle is-4">Front-End Developer</h3>
             <span id="fade-in-text" class="subtite is-6">I want to help build things that people need.</span>
             <section id="text-to-grow">
               <span></span>
@@ -38,9 +43,10 @@
         <img class="main-image" src="images\some_code.jpeg" alt="Coding!"><!---
           image source: https://cdn-images-1.medium.com/max/1200/1*bcZz-qb_DNpvrNNwQBhQmQ.jpeg !--->
     </div>
-      <div id="about" class="section">
-        <div class="container">
-          <h1 class="title is-3">About</h1>
+
+    <div id="about" class="section">
+      <div class="container">
+        <h1 class="title is-3">About</h1>
           <p id="about">I'm a sous chef with a philosophy degree, trying something new. I've
               been running a kitchen for years, and have always had an interest in
               computers. I got into the "Grow with Google" challenge, and completed
@@ -48,25 +54,21 @@
               want to build things that fulfill previously unknown needs.  The
               kinds of things that make people say, "I had no idea I needed this
               in my life until I found out it existed."</p>
-        </div>
       </div>
+    </div>
   <div id="projects" class="section">
     <h1 class="title is-3">Projects</h1>
+
       <div class="tile is-ancestor">
-        <!-- <section class="tile is-parent is-3">
-          <a class="tile is-child is-11 does-transform" href="PixelArtMaker/index.html">
-            <img class="project_img" src="images/pixel-art.png" alt="My Pixel Art Maker">
-              <span class="content has-text-white-ter">Udacity Pixel Art Maker</span>
-          </a>
-        </section> -->
         <section class="tile is-parent is-3">
           <a class="tile is-child is-11 does-transform" href="frogger/index.html">
             <img class="project_img" src="images/frogger-image.PNG" alt="Game Screen">
             <div class="level">
-                <span class="level-left">Frogger Style Game</span>
+              <span class="level-left">Frogger Style Game</span>
             </div>
           </a>
           </section>
+
           <section class="tile is-parent is-5">
             <a class="tile is-child is-11 does-transform" href="LFKoffee/index.html">
               <img class="project_img" src="images/lfkoffee-image.PNG" alt="LFKoffee">
@@ -75,6 +77,7 @@
               </div>
             </a>
           </section>
+
           <section class="tile is-parent is-3">
             <a class="tile is-child is-11 does-transform" href="memory-game/index.html">
               <img class="project_img" src="images/memory-image.PNG" alt="Game Screen">
@@ -85,10 +88,13 @@
           </section>
         </div>
       </div>
+
       <div id="contact" class="section">
+
         <span class="title is-3">Contact</span>
           <footer class="footer">
             <div class="level">
+
               <div class="level-left tags">
                 <a class="tag is-medium does-transform" href="mailto:halbeckerman@gmail.com">
                   <span class="icon is-large" >
@@ -96,19 +102,21 @@
                     </span>
                     <span class="is-hidden-mobile">halbeckerman@gmail.com</span>
                   </a>
+
                   <a class="tag is-medium does-transform" href="https://github.com/zestymcspicy">
                     <span class="icon is-large">
                       <i class="fab fa-github"></i>
                     </span>
                     <span class="is-hidden-mobile">GitHub</span>
                   </a>
-                  <a class="tag is-medium does-transform" href="https://github.com/zestymcspicy">
+
+                  <a class="tag is-medium does-transform" href="https://www.linkedin.com/in/harold-beckerman">
                     <span class="icon is-large">
                       <i class="fab fa-linkedin-in"></i>
                     </span>
                     <span class="is-hidden-mobile">LinkedIn</span>
                   </a>
-            </div>
+              </div>
             </div>
           </div>
         </footer>

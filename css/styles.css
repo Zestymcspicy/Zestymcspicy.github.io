@@ -264,7 +264,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Karla", "Proza Libre", serif; }
+  font-family: "Proza Libre", "Karla", serif; }
 
 code,
 pre {
@@ -4533,7 +4533,7 @@ a.navbar-item,
   .navbar-link:hover,
   .navbar-link.is-active {
     background-color: #fafafa;
-    color: #f5fbf8; }
+    color: #3e5e65; }
 
 .navbar-item {
   display: block;
@@ -6751,6 +6751,9 @@ label.panel-block {
   margin-top: 22%;
   max-width: 128px;
   max-height: 128px; }
+
+#dropped-sub {
+  margin-top: -0.25rem; }
 
 img {
   border-radius: 2%; }

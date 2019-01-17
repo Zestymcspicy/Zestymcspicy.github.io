@@ -8,6 +8,7 @@
   <title>Harold Beckerman's Portfolio</title>
 </head>
 <body>
+
   <nav class="navbar" role="navigation" aria-label="main-navigation">
     <div class="navbar-start is-expanded"></div>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -15,6 +16,7 @@
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
+
       <div class="navbar-end">
         <div id="target" class="navbar-menu">
           <a href="#about" class="does-transform navbar-item">About</a>
@@ -32,9 +34,9 @@
         <div id="top-info" class="column">
           <h1 class="title is-2">Harold Beckerman</h1>
           <h3 id="dropped-sub" class="subtitle is-4">Front-End Developer</h3>
-            <span id="fade-in-text" class="subtite is-6">I want to help build things that people need.</span>
+            <span id="fade-in-text" class="invisible-text subtite is-6">I'd like to help build things that people need.</span>
             <section id="text-to-grow">
-              <span></span>
+              <span class="content"> </span>
             </section>
         </div>
       </header>
@@ -56,49 +58,52 @@
               in my life until I found out it existed."</p>
       </div>
     </div>
+
   <div id="projects" class="section">
-    <h1 class="title is-3">Projects</h1>
+    <div class="container">
+      <h1 class="title is-3">Projects</h1>
 
-      <div class="tile is-ancestor">
-        <section class="tile is-parent is-3">
-          <a class="tile is-child is-11 does-transform" href="frogger/index.html">
-            <img class="project_img" src="images/frogger-image.PNG" alt="Game Screen">
-            <div class="level">
-              <span class="level-left">Frogger Style Game</span>
-            </div>
-          </a>
-          </section>
-
-          <section class="tile is-parent is-5">
-            <a class="tile is-child is-11 does-transform" href="LFKoffee/index.html">
-              <img class="project_img" src="images/lfkoffee-image.PNG" alt="LFKoffee">
-              <div class="level">
-                <span class="level-left">LFKoffee</span>
-              </div>
-            </a>
-          </section>
-
+        <div class="tile is-ancestor">
           <section class="tile is-parent is-3">
-            <a class="tile is-child is-11 does-transform" href="memory-game/index.html">
-              <img class="project_img" src="images/memory-image.PNG" alt="Game Screen">
+            <a class="tile is-child is-11 does-transform" href="frogger/index.html">
+              <img class="project_img" src="images/frogger-image.PNG" alt="Game Screen">
               <div class="level">
-                <span class="level-left">Memory Card Game</span>
+                <span class="level-left">Frogger Style Game</span>
               </div>
             </a>
-          </section>
+            </section>
+
+            <section class="tile is-parent is-5">
+              <a class="tile is-child is-11 does-transform" href="LFKoffee/index.html">
+                <img class="project_img" src="images/lfkoffee-image.PNG" alt="LFKoffee">
+                <div class="level">
+                  <span class="level-left">LFKoffee</span>
+                </div>
+              </a>
+            </section>
+
+            <section class="tile is-parent is-3">
+              <a class="tile is-child is-11 does-transform" href="memory-game/index.html">
+                <img class="project_img" src="images/memory-image.PNG" alt="Game Screen">
+                <div class="level">
+                  <span class="level-left">Memory Card Game</span>
+                </div>
+              </a>
+            </section>
+          </div>
         </div>
       </div>
 
       <div id="contact" class="section">
+        <div class="container">
+          <span class="title is-3">Contact</span>
+            <footer class="footer">
+              <div class="level">
 
-        <span class="title is-3">Contact</span>
-          <footer class="footer">
-            <div class="level">
-
-              <div class="level-left tags">
-                <a class="tag is-medium does-transform" href="mailto:halbeckerman@gmail.com">
-                  <span class="icon is-large" >
-                    <i class="fas fa-envelope-square"></i>
+                <div class="level-left tags">
+                  <a class="tag is-medium does-transform" href="mailto:halbeckerman@gmail.com">
+                    <span class="icon is-large" >
+                      <i class="fas fa-envelope-square"></i>
                     </span>
                     <span class="is-hidden-mobile">halbeckerman@gmail.com</span>
                   </a>
@@ -119,7 +124,8 @@
               </div>
             </div>
           </div>
-        </footer>
-        <script src="js/main.js"></script>
-      </body>
-    </html>
+        </div>
+      </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

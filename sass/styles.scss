@@ -25,6 +25,10 @@ $navbar-item-hover-color: $my-gray;
   max-height: 128px
 }
 
+.invisible-text {
+  color: $my-gray;
+}
+
 #dropped-sub{
   margin-top: -0.25rem;
 }

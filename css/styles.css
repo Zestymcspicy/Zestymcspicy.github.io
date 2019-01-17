@@ -6752,6 +6752,9 @@ label.panel-block {
   max-width: 128px;
   max-height: 128px; }
 
+.invisible-text {
+  color: #3e5e65; }
+
 #dropped-sub {
   margin-top: -0.25rem; }
 

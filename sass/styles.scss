@@ -21,16 +21,20 @@ $navbar-item-hover-color: $my-gray;
 
 #logo{
   margin-top: 22%;
-  max-width: 128px;
-  max-height: 128px
+  max-width: 200px;
+  max-height: 200px
 }
 
 .invisible-text {
   color: $my-gray;
 }
 
+#brand-logo{
+  max-height: 40px;
+}
+
 #bulma{
-  height: 40px;
+  max-height: 40px;
 }
 
 #dropped-sub{

@@ -6749,14 +6749,17 @@ label.panel-block {
 
 #logo {
   margin-top: 22%;
-  max-width: 128px;
-  max-height: 128px; }
+  max-width: 200px;
+  max-height: 200px; }
 
 .invisible-text {
   color: #3e5e65; }
 
+#brand-logo {
+  max-height: 40px; }
+
 #bulma {
-  height: 40px; }
+  max-height: 40px; }
 
 #dropped-sub {
   margin-top: -0.25rem; }

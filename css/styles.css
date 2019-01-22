@@ -6752,6 +6752,9 @@ label.panel-block {
   max-width: 180px;
   max-height: 180px; }
 
+.text-dropped {
+  padding: 5% 0 0 2%; }
+
 .invisible-text {
   color: #3e5e65; }
 

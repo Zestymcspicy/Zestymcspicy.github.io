@@ -6781,9 +6781,12 @@ i {
 .does-transform:hover {
   cursor: pointer;
   animation-name: float;
-  animation-duration: .5s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: both; }
+  animation-duration: .4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  text-decoration: none; }
+  .does-transform:hover .project-text {
+    color: #f5fbf8; }
 
 .does-transform-text:hover {
   cursor: pointer;
@@ -6791,9 +6794,6 @@ i {
   animation-duration: .45s;
   animation-timing-function: ease-in;
   animation-fill-mode: both; }
-
-a:hover {
-  text-decoration: none; }
 
 @keyframes float {
   100% {
@@ -6805,6 +6805,27 @@ a:hover {
   100% {
     color: #f5fbf8; } }
 
-@media screen and (max-width: 765px) {
+#skewed {
+  transform: skewY(-3deg); }
+
+@media screen and (max-width: 768px) {
+  .project_img {
+    width: 65%; } }
+
+.navbar {
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1); }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      margin-bottom: 25px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1087px) {
+  #target {
+    padding-left: 70%; } }
+
+@media screen and (max-width: 769px) {
   #top-info {
-    margin-left: 1rem; } }
+    margin-left: 1rem; }
+  #main-image {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; } }

@@ -1,14 +1,20 @@
+
+const mainImage = document.getElementById("main-image")
 const textToGrow = document.getElementById("text-to-grow");
 document.getElementById("fade-in-text").classList.add("fade-in");
+//string of text then split into array and added through iteration
 let textToAdd = "...or maybe just really, REALLY want.";
 let textToAddArray = textToAdd.split(" ");
+
+//iterate throught the array of words and add each to the DOM on a timer
 addToText = () => {
   for(var i=0; i<textToAddArray.length; i++) {
     let wordToAdd = document.createElement("span");
-    wordToAdd.classList.add("fade-in");
+    textToGrow.appendChild(wordToAdd);
+    wordToAdd.classList.add("invisible-text");    
     wordToAdd.innerHTML=`${textToAddArray[i]} `;
     setTimeout(function () {
-      textToGrow.appendChild(wordToAdd);
+      wordToAdd.classList.add("fade-in");
     }, 700+i*700);
   }
 }

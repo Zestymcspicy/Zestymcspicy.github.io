@@ -27,7 +27,7 @@ $navbar-item-hover-color: $my-gray;
 
 .text-dropped{
   padding: 5% 0 0 2%;
-  
+
 }
 
 .invisible-text {
@@ -60,12 +60,18 @@ i{
   animation-fill-mode: forwards;
 }
 
+
+
 .does-transform:hover{
   cursor: pointer;
   animation-name: float;
-  animation-duration: .5s;
-  animation-timing-function: ease-in;
+  animation-duration: .4s;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: both;
+  text-decoration: none;
+  .project-text{
+    color: $my-white;
+  }
 }
 
 .does-transform-text:hover{
@@ -76,9 +82,6 @@ i{
   animation-fill-mode: both;
 }
 
-a:hover{
-  text-decoration: none;
-}
 
 @keyframes float {
 
@@ -96,8 +99,34 @@ a:hover{
   }
 }
 
-@media screen and(max-width: 765px) {
+#skewed{
+  transform: skewY(-3deg);
+}
+.project_img{
+  @include mobile{
+    width: 65%;
+  }
+}
+
+.navbar{
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+  @include mobile{
+    margin-bottom: 25px;
+  }
+}
+
+#target{
+  @include tablet-only {
+  padding-left: 70%;
+  }
+}
+@media screen and(max-width: 769px) {
   #top-info{
     margin-left: 1rem;
+  }
+  #main-image{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }

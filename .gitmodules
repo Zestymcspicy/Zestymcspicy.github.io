@@ -4,6 +4,3 @@
 [submodule "memory-game"]
 	path = memory-game
 	url = https://github.com/zestymcspicy/fend-project-memory-game
-[submodule "LFKoffee"]
-	path = LFKoffee
-	url = https://github.com/zestymcspicy/LFKoffee

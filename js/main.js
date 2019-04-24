@@ -11,7 +11,7 @@ addToText = () => {
   for(var i=0; i<textToAddArray.length; i++) {
     let wordToAdd = document.createElement("span");
     textToGrow.appendChild(wordToAdd);
-    wordToAdd.classList.add("invisible-text");    
+    wordToAdd.classList.add("invisible-text");
     wordToAdd.innerHTML=`${textToAddArray[i]} `;
     setTimeout(function () {
       wordToAdd.classList.add("fade-in");
@@ -24,24 +24,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
+  const navbarItems = document.querySelectorAll(".navbar-item")
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
 
     // Add a click event on each of them
     $navbarBurgers.forEach( el => {
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById('target');
       el.addEventListener('click', () => {
+        navbarItems.forEach(item => {
+          let menuClick = item.addEventListener("click", function() {
+            if($target.classList.contains('is-active')) {
+            toggle();
+          }
+            return navbarItems.forEach(x => x.removeEventListener("click", menuClick))
+        }, false)
+      })
+      toggle();
+    })
 
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById('target');
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    const toggle = () => {
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+    }
       });
-    });
-  }
-
-});
+    };
+  });

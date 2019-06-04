@@ -20,10 +20,10 @@ gulp.task('sass', function () {
 
 
 gulp.task('watch-reload', function() {
-  gulp.watch("./sass/*.scss", ['sass']);
+  gulp.watch("./sass/*.scss", sass);
   gulp.watch("css/*.css", browserSync.reload);
   gulp.watch("index.html", browserSync.reload);
   gulp.watch("js/*.js", browserSync.reload);
 })
 
-gulp.task('default', gulp.series('browser-sync', 'watch-reload'))
+gulp.task('default', gulp.parallel('browser-sync', 'watch-reload'))

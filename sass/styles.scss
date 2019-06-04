@@ -64,7 +64,9 @@ i{
   animation-fill-mode: forwards;
 }
 
-
+#main-image:hover {
+  transform: opacify($blue, $100);
+}
 
 .does-transform:hover{
   cursor: pointer;

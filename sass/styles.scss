@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Karla|Proza+Libre');
 
 $my-white: #f5fbf8;
-$my-gray: #3e5e65;
+$canyon: #65413e;
 
 
 $text: $my-white;
 $link: $my-white;
-$background: $my-gray;
+$background: $canyon;
 $family-sans-serif: "Proza Libre", "Karla", serif;
-$tag-color: $my-gray;
+$tag-color: $canyon;
 $tag-background-color: $my-white;
-$footer-background-color: $my-gray;
-$body-background-color: $my-gray;
-$navbar-background-color: $my-gray;
+$footer-background-color: $canyon;
+$body-background-color: $canyon;
+$navbar-background-color: $canyon;
 $navbar-item-color: $my-white;
 $title-color: $my-white;
 $subtitle-color: $my-white;
-$navbar-item-hover-color: $my-gray;
+$navbar-item-hover-color: $canyon;
 @import "../node_modules/bulma/bulma.sass";
 
 #logo{
@@ -35,7 +35,7 @@ $navbar-item-hover-color: $my-gray;
 }
 
 .invisible-text {
-  color: $my-gray;
+  color: $canyon;
 }
 
 #brand-logo{
@@ -64,9 +64,7 @@ i{
   animation-fill-mode: forwards;
 }
 
-#main-image:hover {
-  transform: opacify($blue, $100);
-}
+
 
 .does-transform:hover{
   cursor: pointer;
@@ -98,7 +96,7 @@ i{
 
 @keyframes text-fade-in {
   0%{
-    color:$my-gray;
+    color:$canyon;
   }
   100%{
     color:$my-white;

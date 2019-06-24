@@ -1,4 +1,33 @@
 
+let ticking = false;
+let lastKnownPosition = 0;
+let multiplier = window.screen.width/1024
+
+
+const bringItIn = position => {
+  // console.log(multiplier)
+  if(position > 120*multiplier){
+    document.querySelector("#about").classList.add("slide-in")
+  }
+  if(position > 300*multiplier){
+    document.querySelector("#skills").classList.add("slide-in")
+  }
+}
+
+window.addEventListener("scroll", e => {
+  document.title = window.scrollY
+  lastKnownPosition = window.scrollY;
+  // console.log(lastKnownPosition)
+
+  if(!ticking) {
+    window.requestAnimationFrame(function() {
+      bringItIn(lastKnownPosition);
+      ticking = false;
+    });
+    ticking= true;
+  }
+})
+
 const mainImage = document.getElementById("main-image")
 const textToGrow = document.getElementById("text-to-grow");
 document.getElementById("fade-in-text").classList.add("fade-in");

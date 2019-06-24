@@ -6747,6 +6747,9 @@ label.panel-block {
   background-color: #65413e;
   padding: 3rem 1.5rem 6rem; }
 
+html {
+  overflow-x: hidden; }
+
 #logo {
   margin-top: 22%;
   max-width: 180px;
@@ -6770,9 +6773,6 @@ label.panel-block {
 #dropped-sub {
   margin-top: -0.25rem; }
 
-img {
-  border-radius: 2%; }
-
 i {
   font-size: 1.5rem; }
 
@@ -6780,6 +6780,18 @@ i {
   animation-name: text-fade-in;
   animation-duration: 5s;
   animation-fill-mode: forwards; }
+
+#lfkoffee-image {
+  width: 99.2%; }
+
+#about {
+  transform: translateX(-100%); }
+
+#skills {
+  transform: translateX(-100%); }
+
+.slide-in {
+  animation: .5s ease-in-out both popIn; }
 
 .does-transform:hover {
   cursor: pointer;
@@ -6798,7 +6810,11 @@ i {
   animation-timing-function: ease-in;
   animation-fill-mode: both; }
 
-@keyframes float {
+@keyframes popIn {
+  100% {
+    transform: translateX(0); } }
+
+@keyframes popInLeft {}@keyframes float {
   100% {
     transform: scale(1.05); } }
 
@@ -6823,7 +6839,8 @@ i {
 
 @media screen and (min-width: 769px) and (max-width: 1087px) {
   #target {
-    padding-left: 70%; } }
+    padding-left: 70%;
+    overflow-x: hidden; } }
 
 @media screen and (max-width: 769px) {
   #top-info {

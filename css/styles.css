@@ -6784,6 +6784,17 @@ i {
 #lfkoffee-image {
   width: 99.2%; }
 
+#mainImage {
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/some_code.jpeg); }
+  @media screen and (min-width: 769px), print {
+    #mainImage {
+      height: 450px; } }
+
 #about {
   transform: translateX(-100%); }
 

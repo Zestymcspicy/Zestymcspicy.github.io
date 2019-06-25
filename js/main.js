@@ -6,10 +6,10 @@ let multiplier = window.screen.width/1024
 
 const bringItIn = position => {
   // console.log(multiplier)
-  if(position > 120*multiplier){
+  if(position > 100*multiplier){
     document.querySelector("#about").classList.add("slide-in")
   }
-  if(position > 300*multiplier){
+  if(position > 280*multiplier){
     document.querySelector("#skills").classList.add("slide-in")
   }
 }

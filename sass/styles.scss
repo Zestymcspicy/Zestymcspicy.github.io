@@ -71,6 +71,18 @@ i{
   width: 99.2%;
 }
 
+#mainImage{
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/some_code.jpeg);
+  @include tablet{
+    height: 450px;
+  }
+}
+
 #about {
   transform: translateX(-100%);
 }

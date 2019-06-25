@@ -6785,18 +6785,22 @@ i {
   width: 99.2%; }
 
 #mainImage {
-  height: 400px;
-  background-attachment: fixed;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 700px 500px;
+  background-attachment: fixed;
   background-image: url(../images/some_code.jpeg); }
+  @media screen and (min-width: 769px), print {
+    #mainImage {
+      background-size: cover;
+      height: 400px; } }
 
 .section {
   margin-top: 4vh; }
 
 #about {
-  transform: translateX(-100%); }
+  transform: translateX(-110%); }
 
 #skills {
   transform: translateX(-100%); }
@@ -6855,8 +6859,4 @@ i {
 
 @media screen and (max-width: 769px) {
   #top-info {
-    margin-left: 1rem; }
-  #main-image {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%; } }
+    margin-left: 1rem; } }

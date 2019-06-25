@@ -2,10 +2,9 @@
 let ticking = false;
 let lastKnownPosition = 0;
 let multiplier = window.screen.width/1024
-
+// multiplier determines when info should slide in
 
 const bringItIn = position => {
-  // console.log(multiplier)
   if(position > 100*multiplier){
     document.querySelector("#about").classList.add("slide-in")
   }

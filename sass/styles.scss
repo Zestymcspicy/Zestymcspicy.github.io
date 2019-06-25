@@ -76,10 +76,11 @@ i{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 700px auto;  
   background-image: url(../images/some_code.jpeg);
   @include tablet{
     height: 450px;
+    background-size: cover;
   }
 }
 

@@ -6788,11 +6788,12 @@ i {
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size: 700px 500px;
-  background-attachment: fixed;
   background-image: url(../images/some_code.jpeg); }
   @media screen and (min-width: 769px), print {
     #mainImage {
+      background-attachment: fixed;
       background-size: cover;
       height: 400px; } }
 

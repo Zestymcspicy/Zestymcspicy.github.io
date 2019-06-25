@@ -72,16 +72,20 @@ i{
 }
 
 #mainImage{
-  height: 300px;
+  height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 700px auto;  
+  // background-size: 700px auto;
+  background-size: cover;
   background-image: url(../images/some_code.jpeg);
-  @include tablet{
-    height: 450px;
-    background-size: cover;
-  }
+  // @include tablet{
+  //   height: 450px;
+  // }
+}
+
+.section{
+  margin-top: 4vh;
 }
 
 #about {
@@ -124,9 +128,7 @@ i{
   }
 }
 
-@keyframes popInLeft{
 
-}
 
 @keyframes float {
 

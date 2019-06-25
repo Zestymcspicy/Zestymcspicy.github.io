@@ -15,9 +15,7 @@ const bringItIn = position => {
 }
 
 window.addEventListener("scroll", e => {
-  document.title = window.scrollY
   lastKnownPosition = window.scrollY;
-  // console.log(lastKnownPosition)
 
   if(!ticking) {
     window.requestAnimationFrame(function() {

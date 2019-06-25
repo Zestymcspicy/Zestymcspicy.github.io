@@ -6785,16 +6785,15 @@ i {
   width: 99.2%; }
 
 #mainImage {
-  height: 300px;
+  height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 700px auto;
+  background-size: cover;
   background-image: url(../images/some_code.jpeg); }
-  @media screen and (min-width: 769px), print {
-    #mainImage {
-      height: 450px;
-      background-size: cover; } }
+
+.section {
+  margin-top: 4vh; }
 
 #about {
   transform: translateX(-100%); }
@@ -6826,7 +6825,7 @@ i {
   100% {
     transform: translateX(0); } }
 
-@keyframes popInLeft {}@keyframes float {
+@keyframes float {
   100% {
     transform: scale(1.05); } }
 

@@ -78,7 +78,7 @@ i{
   background-attachment: scroll;
   background-size: 700px 500px;
   background-image: url(../images/some_code.jpeg);
-  @include tablet{
+  @include desktop{
     background-attachment: fixed;
     background-size: cover;
     height: 400px;

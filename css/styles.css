@@ -6791,7 +6791,7 @@ i {
   background-attachment: scroll;
   background-size: 700px 500px;
   background-image: url(../images/some_code.jpeg); }
-  @media screen and (min-width: 769px), print {
+  @media screen and (min-width: 1088px) {
     #mainImage {
       background-attachment: fixed;
       background-size: cover;

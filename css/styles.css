@@ -6784,8 +6784,12 @@ i {
 #bottom-project-row {
   justify-content: center; }
 
+.center {
+  text-align: center;
+  margin: 0 auto; }
+
 #lfkoffee-image {
-  width: 99.2%; }
+  width: 73.2%; }
 
 #mainImage {
   height: 300px;

@@ -5,12 +5,40 @@ let multiplier = window.screen.width/1024
 // multiplier determines when info should slide in
 
 const bringItIn = position => {
-  if(position > 100*multiplier){
-    document.querySelector("#about").classList.add("slide-in")
+  console.log(position)
+  const about = document.querySelector("#about")
+  const skills = document.querySelector("#skills")
+  const projects =  document.querySelector("#projects")
+  let aboutPos = (position/3)-150
+  let skillsPos = (position/3)-240
+  let projScale = position/1200
+  if(aboutPos>=0){
+    aboutPos=0;
   }
-  if(position > 280*multiplier){
-    document.querySelector("#skills").classList.add("slide-in")
+  about.style = `transform: translateX(${aboutPos}%)`
+  // if(position > 100*multiplier){
+    // about.classList.add("slide-in")
+    // document.querySelector("#about").style.backgroundColor="black";
+  // }
+  if(skillsPos>=0){
+    skillsPos=0;
   }
+  skills.style = `transform: translateX(${skillsPos}%)`
+  // if(position > 280*multiplier){
+    // skills.classList.add("slide-in")
+  // }
+  if(projScale>=1){
+    projScale=1;
+  }
+  // let projPos = (projScale*-40)+40
+  // if(projPos<-22){
+  //   projPos=-22;
+  // }
+  // if(projPos>=0){
+  //   projPos=0;
+  // }
+  projects.style = `transform: scale(${projScale})`
+  // projects.style = `transform: scale(${projScale}) translateY(${projPos}%)`
 }
 
 window.addEventListener("scroll", e => {
@@ -47,6 +75,7 @@ addToText = () => {
 addToText()
 
 document.addEventListener('DOMContentLoaded', () => {
+  bringItIn(window.scrollY);
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);

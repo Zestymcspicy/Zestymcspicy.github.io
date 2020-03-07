@@ -18,9 +18,9 @@
   "homepage": "https://github.com/Zestymcspicy/Zestymcspicy.github.io#readme",
   "dependencies": {
     "bulma": "^0.7.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.11.0",
-    "npm": "^6.9.0"
+    "node-sass": "^4.13.1",
+    "npm": "^6.14.2"
   }
 }

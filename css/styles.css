@@ -6960,6 +6960,9 @@ label.panel-block {
 html {
   overflow-x: hidden; }
 
+nav {
+  overflow-x: hidden; }
+
 #logo {
   margin: 22% 0 0 10%;
   max-width: 180px;

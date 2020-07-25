@@ -27,4 +27,5 @@ function doSass(done) {
     done();
 }
 
+exports.doSass = doSass;
 exports.serve = serve;

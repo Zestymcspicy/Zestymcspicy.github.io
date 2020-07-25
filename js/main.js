@@ -8,10 +8,10 @@ const bringItIn = position => {
   console.log(position)
   const about = document.querySelector("#about")
   const skills = document.querySelector("#skills")
-  const projects =  document.querySelector("#projects")
+  const projects =  document.querySelector("#projectsBox")
   let aboutPos = (position/3)-100
   let skillsPos = (position/3)-240
-  let projScale = position/1200
+  let projScale = position/1300
   if(aboutPos>=0){
     aboutPos=0;
   }

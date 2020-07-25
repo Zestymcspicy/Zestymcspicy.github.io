@@ -11,33 +11,20 @@ function serve() {
       baseDir: './',
     }
   })
-
+  gulp.watch("./sass/*.scss", doSass)
   gulp.watch([
     '*.html',
     '*.js',
     '*.css'
   ]).on('change', server.reload);
+  gulp.watch('./sass/*.scss', sass)
 }
-// gulp.task('default', ['browser-sync'], function() {
-//   gulp.watch("./sass/*.scss", ['sass']);
-//   gulp.watch("css/*.css", browserSync.reload);
-//   gulp.watch("index.html", browserSync.reload);
-//   gulp.watch("js/*.js", browserSync.reload);
-// })
-//
-// gulp.task('browser-sync', function() {
-//   browserSync.init({
-//     server: "./"
-//   });
-// })
 
-function sass() {
-  gulp.watch(['./sass/*.scss'])
-  return gulp.src('./sass/*.scss')
+function doSass(done) {
+  gulp.src('./sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'))
+    done();
 }
 
 exports.serve = serve;
-
-// gulp.task('default', gulp.series('browser-sync', 'watch-reload'))

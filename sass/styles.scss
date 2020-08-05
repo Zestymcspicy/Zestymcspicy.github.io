@@ -94,7 +94,7 @@ i{
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../images/some_code.jpeg);
-  background-attachment: fixed;
+  // background-attachment: fixed;
   @include desktop{
     background-size: cover;
     height: 400px;

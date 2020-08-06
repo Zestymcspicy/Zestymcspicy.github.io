@@ -6970,6 +6970,9 @@ nav {
   border-radius: 50%; }
 
 #top-info {
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: 200;
+  font-style: normal;
   margin: 5% 2% 5% 0; }
 
 .section-top {
